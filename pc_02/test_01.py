@@ -19,11 +19,13 @@ for estudiante in diccionario_1:
     print("El promedio de {} es {}".format(estudiante, f'{promedio:.1f}'))
 
 if promedio >= 11:
-    print("Aprobado")
+    estado = "Aprobado"
 else:
-    print("Desaprobado")
+    estado = "Desaprobado"
 
+diccionario_2 = {promedio: estado}
+diccionario_3 = {estudiante: diccionario_2}
 
-
-
+for estudiante in diccionario_3:
+    print("El diccionario actualizado es: {}".format(diccionario_3))
 
